@@ -23,9 +23,3 @@ AudioPhoneticsLab is a repository dedicated to the analysis of vocal audio files
 
 ## Contribution
 Contributions to the project are welcome. Please ensure to follow the coding standards and add appropriate tests for new features.
-
-## License
-[Specify License]
-
-## Contact
-[Your Contact Information]
