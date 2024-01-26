@@ -1,2 +1,2 @@
 # AudioPhoneticsLab
-Este repositorio contiene herramientas y scripts para el análisis detallado de formantes en grabaciones de voz. 
+This repository contains tools and scripts for detailed analysis of formants in voice recordings.
