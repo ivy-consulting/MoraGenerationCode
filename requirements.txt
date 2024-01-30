@@ -1,4 +1,1 @@
-praat-parselmouth
-matplotlib
-Numpy
-openai-whisper
+whisper-timestamped

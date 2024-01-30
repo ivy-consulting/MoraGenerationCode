@@ -1,25 +1,45 @@
-# AudioPhoneticsLab: Vowel Analysis and Detection
+# AudioPhoneticsLab
 
-## Description
-AudioPhoneticsLab is a repository dedicated to the analysis of vocal audio files. It focuses on extracting formant frequencies (F1 and F2) to identify specific vowels within an audio file. The repository contains two primary Python scripts: one for analyzing and setting parameters for each vowel based on given audio samples, and another for analyzing a `.wav` audio file to detect these vowels.
+## Overview
+AudioPhoneticsLab is a specialized repository focusing on processing audio files to transcribe speech and assigning timestamps to each phonetic symbol in the transcription. The primary function of this repository is to take an audio input, transcribe it using the `whisper-timestamped` model, and then distribute the duration of each transcribed word among its constituent symbols. This process results in a detailed mapping of when each symbol in the spoken language begins and ends in the audio.
 
 ## Features
-- **Vowel Parameter Analysis:** Analyzes specific audio files for each vowel (a, e, i, o, u) to determine the maximum and minimum frequencies of formants F1 and F2.
-- **Vowel Detection in Audio:** Uses the analyzed vowel parameters to detect the presence of specific vowels in any given `.wav` audio file.
-
-## How It Works
-1. **Vowel Parameter Setting:** The script `scripts/audio_analytics/numeric_analytics.py` analyzes predefined audio samples for each vowel. It calculates and stores the max and min values of formants F1 and F2 in a JSON file (`results_max_min_frecuency_per_vocal.json`).
-2. **Vowel Detection:** The script `scripts/wav_vowels_detect.py` uses the generated JSON file with vowel parameters to analyze a new audio file. It detects the start and end times of each vowel present in the audio.
-
-## Usage
-1. Run `set_vowel_parameters.py` with the audio samples of each vowel to generate the JSON file with vowel formant parameters.
-2. Use `detect_vowels_in_audio.py` to analyze any `.wav` audio file for vowel detection. The results will be saved in `vowel_detections.json`.
+- **Audio Transcription**: Utilizes `whisper-timestamped` to transcribe spoken words in an audio file.
+- **Symbol-Level Timestamps**: Breaks down each word into its constituent symbols and assigns a start and end timestamp to each, offering a detailed view of the speech progression.
 
 ## Requirements
-- Python 3
-- Parselmouth
-- Numpy
-- Matplotlib
+- Python 3.x
+- whisper-timestamped
+- Other dependencies as required by `whisper-timestamped`
 
-## Contribution
-Contributions to the project are welcome. Please ensure to follow the coding standards and add appropriate tests for new features.
+## Installation
+To set up the AudioPhoneticsLab environment, clone the repository and install the required packages:
+
+```bash
+git clone https://github.com/your-username/AudioPhoneticsLab.git
+cd AudioPhoneticsLab
+pip install whisper-timestamped
+```
+
+## Usage
+The main script for processing audio files is located at `scripts/speech_symbol_timestamps.py` This script performs the following steps:
+
+Loads a specified audio file.
+Transcribes the audio to text using whisper-timestamped.
+Distributes the duration of each word in the transcription among its constituent symbols.
+Saves the results with detailed timestamps in a JSON file.
+To run the script, navigate to the script's directory and execute it with Python:
+
+```bash
+Copy code
+python scripts/speech_symbol_timestamps.py
+Output
+The script outputs a JSON file named speech_symbol_timestamps.json, which contains the transcription of the audio file and the start and end timestamps for each symbol in the transcription. This file is structured to provide a clear and detailed view of the speech's progression at the symbol level.
+```
+## Contributions
+Contributions to AudioPhoneticsLab are welcome. If you have an idea or improvement, feel free to fork the repository and submit a pull request.
+
+
+## Acknowledgments
+OpenAI's Whisper project for providing the base model for audio transcription.
+The community of developers and researchers in the field of speech recognition and processing.
