@@ -1,19 +1,19 @@
 import whisper_timestamped
 import json
 
-# Carga el modelo de Whisper deseado
+# Load the desired Whisper model
 model = whisper_timestamped.load_model("base", device="cpu")
 
-# Ruta al archivo de audio que deseas transcribir
-audio_path = "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/japanes_1.mp3"
+# Path to the audio file you want to transcribe
+audio_path = "test_audios/230641vzpclfda (1).mp3"
 
-# Transcribe el archivo de audio
+# Transcribe the audio file
 result = whisper_timestamped.transcribe(model, audio_path, language="ja")
 
-# Imprime la transcripción completa
-print("Transcripción completa:", result["text"])
+# Print the complete transcription
+print("Complete transcription:", result["text"])
 
-# Función para dividir el tiempo de una palabra entre sus símbolos
+# Function to distribute the time of a word among its symbols
 def distribute_time_equally(start, end, text, decimals=4):
     duration = end - start
     num_symbols = len(text)
@@ -29,8 +29,7 @@ def distribute_time_equally(start, end, text, decimals=4):
         })
     return symbols_times
 
-
-# Prepara los datos para guardarlos en JSON
+# Prepare the data to be saved in JSON
 data_to_save = {
     "transcription": result["text"],
     "segments": []
@@ -48,11 +47,11 @@ for segment in result["segments"]:
         segment_info["symbols"].extend(symbols_times)
     data_to_save["segments"].append(segment_info)
 
-# Define la ruta al archivo JSON donde se guardarán los resultados
+# Define the path to the JSON file where the results will be saved
 json_output_path = "speech_symbol_timestamps.json"
 
-# Guarda los datos en un archivo JSON
+# Save the data in a JSON file
 with open(json_output_path, 'w', encoding='utf-8') as json_file:
     json.dump(data_to_save, json_file, ensure_ascii=False, indent=4)
 
-print(f"Resultados guardados en: {json_output_path}")
+print(f"Results saved in: {json_output_path}")
