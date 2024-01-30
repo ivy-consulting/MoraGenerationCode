@@ -1,3 +1,4 @@
 praat-parselmouth
 matplotlib
 Numpy
+openai-whisper

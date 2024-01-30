@@ -6,7 +6,7 @@ import numpy as np
 
 # Rutas a los archivos de audio para cada vocal
 vocales = ["a", "i", "u", "e", "o"]
-archivos = [f"/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/{vocal}.wav" for vocal in vocales]
+archivos = [f"/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/{vocal}_shikoku.wav" for vocal in vocales]
 
 # Crear subplots para cada vocal
 fig, axs = plt.subplots(5, 1, figsize=(10, 20))
@@ -35,10 +35,13 @@ for i, archivo in enumerate(archivos):
 
     # Configurar los ticks del eje X para que estén cada 0.5 segundossudo apt-get install qt5-qmake qt5-default libqt5gui5 libqt5core5a libqt5widgets5 libqt5network5
 
-    axs[i].set_xticks(np.arange(0, duracion + 0.1, 0.5))
+    axs[i].set_xticks(np.arange(0, duracion + 0.1, 0.1))
 
     axs[i].legend()
 
 # Ajustar el layout y mostrar la gráfica
 plt.tight_layout()
 plt.show()
+
+# Write a code to chose a number prime in a alist
+

@@ -4,7 +4,7 @@ import json
 
 # Rutas a los archivos de audio y rangos de tiempo para cada vocal
 vocales_info = {
-    "a": {"archivo": "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/a.wav", "inicio": 1, "fin": 8.3},
+    "a": {"archivo": "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/a_voice.wav", "inicio": 1, "fin": 8.3},
     "e": {"archivo": "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/e.wav", "inicio": 1, "fin": 8.3},
     "i": {"archivo": "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/i.wav", "inicio": 1, "fin": 9},
     "o": {"archivo": "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/o.wav", "inicio": 1.3, "fin": 6},

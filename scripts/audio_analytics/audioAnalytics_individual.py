@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Cargar un archivo de sonido
-snd = parselmouth.Sound("/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/a_japanese.wav")
+snd = parselmouth.Sound("/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/a_voice.wav")
 
 # Análisis de formantes
 formants = snd.to_formant_burg()
