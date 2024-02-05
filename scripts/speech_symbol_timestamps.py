@@ -1,7 +1,7 @@
 import whisper_timestamped
 import json
 
-def transcribe_and_save(audio_path, save_to_file=False, json_output_path="speech_symbol_timestamps.json"):
+def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_symbol_timestamps.json"):
     # Load the desired Whisper model
     model = whisper_timestamped.load_model("base", device="cpu")
     
@@ -54,5 +54,5 @@ def transcribe_and_save(audio_path, save_to_file=False, json_output_path="speech
     return data_to_save
 
 # Example of use
-audio_path = "/path/to/your/audio/file.mp3"
-transcription_json = transcribe_and_save(audio_path, save_to_file=True)
+audio_path = "/home/andromeda/freelancer/AudioPhoneticsLab/test_audios/japanes_1.mp3"
+transcription_json = audio_query_json(audio_path, save_to_file=True)
