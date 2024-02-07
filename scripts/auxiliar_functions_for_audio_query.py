@@ -123,8 +123,7 @@ def distribute_time_equally(start, end, text, decimals=4):
             "text": symbol_group,
             "start": round(symbol_start, decimals),
             "end": round(symbol_end, decimals),
-            "vowel_consonant_length": round(symbol_end - symbol_start, decimals),
-            "is_interrogative": "か" in symbol_group or "?" in symbol_group  # Mark as interrogative if applicable.
+            "vowel_consonant_length": round(symbol_end - symbol_start, decimals)
         })
     
     return symbols_times  # Return the list of symbols with their allocated times and additional details.

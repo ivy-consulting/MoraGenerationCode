@@ -12,20 +12,30 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
 
     audio_query_json = {
         "transcription": result["text"],
-        "symbols": []
+        "words": []
     }
 
     for segment in result["segments"]:
         for word in segment.get("words", []):
             
+            # Distribute time equally per each  symbol
             symbols_times = distribute_time_equally(word['start'], word['end'], word['text'])
-            audio_query_json["symbols"].extend(symbols_times)
 
-    # Add consonant and vowel information
-    audio_query_json["symbols"] = add_consonant_vowel_info(audio_query_json["symbols"], mapping_file)
+            # Add consonant and vowel information
+            symbols_times = add_consonant_vowel_info(symbols_times, mapping_file)
+            
+            # Calculate pitch for each symbol
+            symbols_times = calculate_pitch(audio_path, symbols_times)
 
-    # Calculate pitch for each symbol
-    audio_query_json["symbols"] = calculate_pitch(audio_path, audio_query_json["symbols"])
+            # Checking if the word is interrogative
+            dic_per_word = {
+                "symbols": symbols_times,
+                "is_interrogative": "か" in word['text'] or "?" in word['text'],
+                "complete_word": word['text']
+                }
+            
+            # Add the word to the list of accent phrases
+            audio_query_json["words"].append(dic_per_word)
 
     # Add metadata to json audio info
     metadata = {
