@@ -2,212 +2,264 @@
     "transcription": "私は文別市に来ました。おすすめの観光スポットはありますか?",
     "symbols": [
         {
-            "symbol": "私",
+            "text": "私",
             "start": 0.14,
             "end": 0.44,
             "vowel_consonant_length ": 0.3,
+            "is_interrogative": false,
             "consonant": "w",
-            "vowel": "atashi"
+            "vowel": "atashi",
+            "pitch": 95.65
         },
         {
-            "symbol": "は",
+            "text": "は",
             "start": 0.44,
             "end": 0.68,
             "vowel_consonant_length ": 0.24,
+            "is_interrogative": false,
             "consonant": "h",
-            "vowel": "a"
+            "vowel": "a",
+            "pitch": 2047.35
         },
         {
-            "symbol": "文",
+            "text": "文",
             "start": 0.68,
             "end": 0.88,
             "vowel_consonant_length ": 0.2,
+            "is_interrogative": false,
             "consonant": "b",
-            "vowel": "un"
+            "vowel": "un",
+            "pitch": 85.64
         },
         {
-            "symbol": "別",
+            "text": "別",
             "start": 0.88,
             "end": 1.14,
             "vowel_consonant_length ": 0.26,
+            "is_interrogative": false,
             "consonant": "b",
-            "vowel": "etsu"
+            "vowel": "etsu",
+            "pitch": 196.16
         },
         {
-            "symbol": "市",
+            "text": "市",
             "start": 1.14,
             "end": 1.36,
             "vowel_consonant_length ": 0.22,
+            "is_interrogative": false,
             "consonant": "sh",
-            "vowel": "i"
+            "vowel": "i",
+            "pitch": 3182.9
         },
         {
-            "symbol": "に",
+            "text": "に",
             "start": 1.36,
             "end": 1.46,
             "vowel_consonant_length ": 0.1,
+            "is_interrogative": false,
             "consonant": "n",
-            "vowel": "i"
+            "vowel": "i",
+            "pitch": 204.71
         },
         {
-            "symbol": "来",
+            "text": "来",
             "start": 1.46,
             "end": 1.6,
             "vowel_consonant_length ": 0.14,
+            "is_interrogative": false,
             "consonant": "r",
-            "vowel": "ai"
+            "vowel": "ai",
+            "pitch": 2187.18
         },
         {
-            "symbol": "ま",
+            "text": "ま",
             "start": 1.6,
             "end": 1.7067,
             "vowel_consonant_length ": 0.1067,
+            "is_interrogative": false,
             "consonant": "m",
-            "vowel": "a"
+            "vowel": "a",
+            "pitch": 85.03
         },
         {
-            "symbol": "し",
+            "text": "し",
             "start": 1.7067,
             "end": 1.8133,
             "vowel_consonant_length ": 0.1067,
+            "is_interrogative": false,
             "consonant": "sh",
-            "vowel": "i"
+            "vowel": "i",
+            "pitch": 2862.93
         },
         {
-            "symbol": "た。",
+            "text": "た。",
             "start": 1.8133,
             "end": 1.92,
             "vowel_consonant_length ": 0.1067,
-            "consonant": null,
-            "vowel": null
+            "is_interrogative": false,
+            "consonant": "t",
+            "vowel": "a",
+            "pitch": 2266.33
         },
         {
-            "symbol": "お",
+            "text": "お",
             "start": 2.34,
             "end": 2.56,
             "vowel_consonant_length ": 0.22,
+            "is_interrogative": false,
             "consonant": null,
-            "vowel": "o"
+            "vowel": "o",
+            "pitch": 95.43
         },
         {
-            "symbol": "す",
+            "text": "す",
             "start": 2.56,
             "end": 2.68,
             "vowel_consonant_length ": 0.12,
+            "is_interrogative": false,
             "consonant": "s",
-            "vowel": "u"
+            "vowel": "u",
+            "pitch": 3043.68
         },
         {
-            "symbol": "す",
+            "text": "す",
             "start": 2.68,
             "end": 2.82,
             "vowel_consonant_length ": 0.14,
+            "is_interrogative": false,
             "consonant": "s",
-            "vowel": "u"
+            "vowel": "u",
+            "pitch": 1682.97
         },
         {
-            "symbol": "め",
+            "text": "め",
             "start": 2.82,
             "end": 2.94,
             "vowel_consonant_length ": 0.12,
+            "is_interrogative": false,
             "consonant": "m",
-            "vowel": "e"
+            "vowel": "e",
+            "pitch": 187.96
         },
         {
-            "symbol": "の",
+            "text": "の",
             "start": 2.94,
             "end": 3.1,
             "vowel_consonant_length ": 0.16,
+            "is_interrogative": false,
             "consonant": "n",
-            "vowel": "o"
+            "vowel": "o",
+            "pitch": 203.06
         },
         {
-            "symbol": "観",
+            "text": "観",
             "start": 3.1,
             "end": 3.28,
             "vowel_consonant_length ": 0.18,
+            "is_interrogative": false,
             "consonant": "k",
-            "vowel": "an"
+            "vowel": "an",
+            "pitch": 501.08
         },
         {
-            "symbol": "光",
+            "text": "光",
             "start": 3.28,
             "end": 3.48,
             "vowel_consonant_length ": 0.2,
+            "is_interrogative": false,
             "consonant": "h",
-            "vowel": "ikari"
+            "vowel": "ikari",
+            "pitch": 246.76
         },
         {
-            "symbol": "ス",
+            "text": "ス",
             "start": 3.48,
             "end": 3.66,
             "vowel_consonant_length ": 0.18,
+            "is_interrogative": false,
             "consonant": "s",
-            "vowel": "u"
+            "vowel": "u",
+            "pitch": 1664.87
         },
         {
-            "symbol": "ポ",
+            "text": "ポ",
             "start": 3.66,
             "end": 3.8,
             "vowel_consonant_length ": 0.14,
+            "is_interrogative": false,
             "consonant": "p",
-            "vowel": "o"
+            "vowel": "o",
+            "pitch": 2748.29
         },
         {
-            "symbol": "ット",
+            "text": "ット",
             "start": 3.8,
             "end": 3.96,
             "vowel_consonant_length ": 0.16,
-            "consonant": null,
-            "vowel": null
+            "is_interrogative": false,
+            "consonant": "t",
+            "vowel": "o",
+            "pitch": 256.68
         },
         {
-            "symbol": "は",
+            "text": "は",
             "start": 3.96,
             "end": 4.14,
             "vowel_consonant_length ": 0.18,
+            "is_interrogative": false,
             "consonant": "h",
-            "vowel": "a"
+            "vowel": "a",
+            "pitch": 194.68
         },
         {
-            "symbol": "あ",
+            "text": "あ",
             "start": 4.14,
             "end": 4.205,
             "vowel_consonant_length ": 0.065,
+            "is_interrogative": false,
             "consonant": null,
-            "vowel": "a"
+            "vowel": "a",
+            "pitch": 154.87
         },
         {
-            "symbol": "り",
+            "text": "り",
             "start": 4.205,
             "end": 4.27,
             "vowel_consonant_length ": 0.065,
+            "is_interrogative": false,
             "consonant": "r",
-            "vowel": "i"
+            "vowel": "i",
+            "pitch": 217.61
         },
         {
-            "symbol": "ま",
+            "text": "ま",
             "start": 4.27,
             "end": 4.335,
             "vowel_consonant_length ": 0.065,
+            "is_interrogative": false,
             "consonant": "m",
-            "vowel": "a"
+            "vowel": "a",
+            "pitch": 93.02
         },
         {
-            "symbol": "す",
+            "text": "す",
             "start": 4.335,
             "end": 4.4,
             "vowel_consonant_length ": 0.065,
+            "is_interrogative": false,
             "consonant": "s",
-            "vowel": "u"
+            "vowel": "u",
+            "pitch": 129.28
         },
         {
-            "symbol": "か?",
+            "text": "か?",
             "start": 4.4,
             "end": 4.7,
             "vowel_consonant_length ": 0.3,
-            "consonant": null,
-            "vowel": null
+            "is_interrogative": true,
+            "consonant": "k",
+            "vowel": "a",
+            "pitch": 156.01
         }
     ]
 }
