@@ -5,13 +5,15 @@
             "symbol": "私",
             "start": 0.14,
             "end": 0.44,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.3,
+            "consonant": "w",
+            "vowel": "atashi"
         },
         {
             "symbol": "は",
             "start": 0.44,
             "end": 0.68,
+            "vowel_consonant_length ": 0.24,
             "consonant": "h",
             "vowel": "a"
         },
@@ -19,27 +21,31 @@
             "symbol": "文",
             "start": 0.68,
             "end": 0.88,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.2,
+            "consonant": "b",
+            "vowel": "un"
         },
         {
             "symbol": "別",
             "start": 0.88,
             "end": 1.14,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.26,
+            "consonant": "b",
+            "vowel": "etsu"
         },
         {
             "symbol": "市",
             "start": 1.14,
             "end": 1.36,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.22,
+            "consonant": "sh",
+            "vowel": "i"
         },
         {
             "symbol": "に",
             "start": 1.36,
             "end": 1.46,
+            "vowel_consonant_length ": 0.1,
             "consonant": "n",
             "vowel": "i"
         },
@@ -47,34 +53,31 @@
             "symbol": "来",
             "start": 1.46,
             "end": 1.6,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.14,
+            "consonant": "r",
+            "vowel": "ai"
         },
         {
             "symbol": "ま",
             "start": 1.6,
-            "end": 1.68,
+            "end": 1.7067,
+            "vowel_consonant_length ": 0.1067,
             "consonant": "m",
             "vowel": "a"
         },
         {
             "symbol": "し",
-            "start": 1.68,
-            "end": 1.76,
+            "start": 1.7067,
+            "end": 1.8133,
+            "vowel_consonant_length ": 0.1067,
             "consonant": "sh",
             "vowel": "i"
         },
         {
-            "symbol": "た",
-            "start": 1.76,
-            "end": 1.84,
-            "consonant": "t",
-            "vowel": "a"
-        },
-        {
-            "symbol": "。",
-            "start": 1.84,
+            "symbol": "た。",
+            "start": 1.8133,
             "end": 1.92,
+            "vowel_consonant_length ": 0.1067,
             "consonant": null,
             "vowel": null
         },
@@ -82,6 +85,7 @@
             "symbol": "お",
             "start": 2.34,
             "end": 2.56,
+            "vowel_consonant_length ": 0.22,
             "consonant": null,
             "vowel": "o"
         },
@@ -89,6 +93,7 @@
             "symbol": "す",
             "start": 2.56,
             "end": 2.68,
+            "vowel_consonant_length ": 0.12,
             "consonant": "s",
             "vowel": "u"
         },
@@ -96,6 +101,7 @@
             "symbol": "す",
             "start": 2.68,
             "end": 2.82,
+            "vowel_consonant_length ": 0.14,
             "consonant": "s",
             "vowel": "u"
         },
@@ -103,6 +109,7 @@
             "symbol": "め",
             "start": 2.82,
             "end": 2.94,
+            "vowel_consonant_length ": 0.12,
             "consonant": "m",
             "vowel": "e"
         },
@@ -110,6 +117,7 @@
             "symbol": "の",
             "start": 2.94,
             "end": 3.1,
+            "vowel_consonant_length ": 0.16,
             "consonant": "n",
             "vowel": "o"
         },
@@ -117,48 +125,47 @@
             "symbol": "観",
             "start": 3.1,
             "end": 3.28,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.18,
+            "consonant": "k",
+            "vowel": "an"
         },
         {
             "symbol": "光",
             "start": 3.28,
             "end": 3.48,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.2,
+            "consonant": "h",
+            "vowel": "ikari"
         },
         {
             "symbol": "ス",
             "start": 3.48,
             "end": 3.66,
-            "consonant": null,
-            "vowel": null
+            "vowel_consonant_length ": 0.18,
+            "consonant": "s",
+            "vowel": "u"
         },
         {
             "symbol": "ポ",
             "start": 3.66,
             "end": 3.8,
+            "vowel_consonant_length ": 0.14,
             "consonant": "p",
             "vowel": "o"
         },
         {
-            "symbol": "ッ",
+            "symbol": "ット",
             "start": 3.8,
-            "end": 3.88,
+            "end": 3.96,
+            "vowel_consonant_length ": 0.16,
             "consonant": null,
             "vowel": null
-        },
-        {
-            "symbol": "ト",
-            "start": 3.88,
-            "end": 3.96,
-            "consonant": "t",
-            "vowel": "o"
         },
         {
             "symbol": "は",
             "start": 3.96,
             "end": 4.14,
+            "vowel_consonant_length ": 0.18,
             "consonant": "h",
             "vowel": "a"
         },
@@ -166,6 +173,7 @@
             "symbol": "あ",
             "start": 4.14,
             "end": 4.205,
+            "vowel_consonant_length ": 0.065,
             "consonant": null,
             "vowel": "a"
         },
@@ -173,6 +181,7 @@
             "symbol": "り",
             "start": 4.205,
             "end": 4.27,
+            "vowel_consonant_length ": 0.065,
             "consonant": "r",
             "vowel": "i"
         },
@@ -180,6 +189,7 @@
             "symbol": "ま",
             "start": 4.27,
             "end": 4.335,
+            "vowel_consonant_length ": 0.065,
             "consonant": "m",
             "vowel": "a"
         },
@@ -187,20 +197,15 @@
             "symbol": "す",
             "start": 4.335,
             "end": 4.4,
+            "vowel_consonant_length ": 0.065,
             "consonant": "s",
             "vowel": "u"
         },
         {
-            "symbol": "か",
+            "symbol": "か?",
             "start": 4.4,
-            "end": 4.55,
-            "consonant": "k",
-            "vowel": "a"
-        },
-        {
-            "symbol": "?",
-            "start": 4.55,
             "end": 4.7,
+            "vowel_consonant_length ": 0.3,
             "consonant": null,
             "vowel": null
         }
