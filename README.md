@@ -1,41 +1,42 @@
 # AudioPhoneticsLab
 
 ## Overview
-AudioPhoneticsLab is a specialized repository focusing on processing audio files to transcribe speech and assigning timestamps to each phonetic symbol in the transcription. The primary function of this repository is to take an audio input, transcribe it using the `whisper-timestamped` model, and then distribute the duration of each transcribed word among its constituent symbols. This process results in a detailed mapping of when each symbol in the spoken language begins and ends in the audio.
+AudioPhoneticsLab is a specialized repository focusing on the transcription of audio files into text and enriching each transcribed word with detailed phonetic information. It takes an audio input, transcribes it using the `whisper-timestamped` model, distributes the duration of each transcribed word among its constituent symbols, calculates the pitch for each symbol, and identifies if the word forms a question. This results in a detailed mapping of when each symbol in the spoken language begins and ends in the audio, offering a clear and detailed view of speech progression.
 
 ## Features
-- **Audio Transcription**: Utilizes `whisper-timestamped` to transcribe spoken words in an audio file.
-- **Symbol-Level Timestamps**: Breaks down each word into its constituent symbols and assigns a start and end timestamp to each, offering a detailed view of the speech progression.
+- **Audio Transcription with Detailed Phonetic Information**: Utilizes the `whisper-timestamped` model to transcribe spoken words in an audio file and enriches the transcription with consonants and vowels information.
+- **Symbol-Level Timestamps and Pitch Analysis**: Assigns a start and end timestamp to each symbol, along with the pitch, providing an in-depth analysis of the speech.
+- **Interrogative Detection**: Identifies whether the transcribed words form a question, enhancing the understanding of speech's intent.
+- **Customizable Output**: Offers options to save the transcription and analysis results into a JSON file, allowing for easy integration with other applications.
 
 ## Requirements
 - Python 3.x
-- whisper-timestamped
-- Other dependencies as required by `whisper-timestamped`
+- Libraries in requirements.txt
 
 ## Installation
-To set up the AudioPhoneticsLab environment, clone the repository and install the required packages:
+To set up the AudioPhoneticsLab environment, follow these steps:
 
 ```bash
 git clone https://github.com/your-username/AudioPhoneticsLab.git
 cd AudioPhoneticsLab
-pip install whisper-timestamped
+pip install -r requirements.txt
 ```
 
 ## Usage
-The main script for processing audio files is located at `scripts/speech_symbol_timestamps.py` This script performs the following steps:
+To process an audio file, use the speech_symbol_timestamps.py script located in the scripts directory. This script will:
 
-Loads a specified audio file.
-Transcribes the audio to text using whisper-timestamped.
-Distributes the duration of each word in the transcription among its constituent symbols.
-Saves the results with detailed timestamps in a JSON file.
-To run the script, navigate to the script's directory and execute it with Python:
+- Load the specified audio file.
+- Transcribe the audio using the whisper-timestamped model.
+- Distribute the duration of each word among its symbols.
+- Add consonant and vowel information and calculate the pitch for each symbol.
+- Save the results in a JSON file.
+- Execute the script with the following command:
 
-```bash
-Copy code
-python scripts/speech_symbol_timestamps.py
-Output
-The script outputs a JSON file named speech_symbol_timestamps.json, which contains the transcription of the audio file and the start and end timestamps for each symbol in the transcription. This file is structured to provide a clear and detailed view of the speech's progression at the symbol level.
-```
+`python scripts/speech_symbol_timestamps.py`
+
+## Output
+The script outputs a JSON file named speech_symbol_timestamps.json, containing the transcription and detailed analysis of the audio file. This includes start and end timestamps for each symbol, pitch values, and whether each word is interrogative, structured to provide a comprehensive overview of speech progression.
+
 ## Contributions
 Contributions to AudioPhoneticsLab are welcome. If you have an idea or improvement, feel free to fork the repository and submit a pull request.
 
