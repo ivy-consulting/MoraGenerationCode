@@ -16,7 +16,15 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "私"
+            "complete_word": "私",
+            "pause_mora": {
+                "text": " ",
+                "consonant": null,
+                "consonant_length": null,
+                "vowel": "pau",
+                "vowel_length": 0.14,
+                "pitch": 0.0
+            }
         },
         {
             "moras": [
@@ -33,7 +41,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "は"
+            "complete_word": "は",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -50,7 +59,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "文"
+            "complete_word": "文",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -67,7 +77,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "別"
+            "complete_word": "別",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -84,7 +95,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "市"
+            "complete_word": "市",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -101,7 +113,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "に"
+            "complete_word": "に",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -118,7 +131,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "来"
+            "complete_word": "来",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -157,7 +171,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "ました。"
+            "complete_word": "ました。",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -174,7 +189,15 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "お"
+            "complete_word": "お",
+            "pause_mora": {
+                "text": " ",
+                "consonant": null,
+                "consonant_length": null,
+                "vowel": "pau",
+                "vowel_length": 0.41999999999999993,
+                "pitch": 0.0
+            }
         },
         {
             "moras": [
@@ -191,7 +214,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "す"
+            "complete_word": "す",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -208,7 +232,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "す"
+            "complete_word": "す",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -225,7 +250,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "め"
+            "complete_word": "め",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -242,7 +268,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "の"
+            "complete_word": "の",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -259,7 +286,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "観"
+            "complete_word": "観",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -276,7 +304,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "光"
+            "complete_word": "光",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -293,7 +322,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "ス"
+            "complete_word": "ス",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -310,7 +340,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "ポ"
+            "complete_word": "ポ",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -327,7 +358,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "ット"
+            "complete_word": "ット",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -344,7 +376,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "は"
+            "complete_word": "は",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -394,7 +427,8 @@
                 }
             ],
             "is_interrogative": false,
-            "complete_word": "あります"
+            "complete_word": "あります",
+            "pause_mora": null
         },
         {
             "moras": [
@@ -411,7 +445,8 @@
                 }
             ],
             "is_interrogative": true,
-            "complete_word": "か?"
+            "complete_word": "か?",
+            "pause_mora": null
         }
     ],
     "speedScale": null,

@@ -26,16 +26,23 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
     model = whisper_timestamped.load_model("base", device="cpu")
     result = whisper_timestamped.transcribe(model, audio_path, language="ja")
     print("Complete transcription:", result["text"])
-
+    print(result)
     # Initialize the main dictionary to store the transcription and word details
     audio_query_data = {
         "transcription": result["text"],
         "accent_phrases": []
     }
-
+    last_word_time = 0
     # Process each word in the transcription
     for segment in result["segments"]:
         for word in segment.get("words", []):
+            # Verify the last word time
+            if word['start'] == last_word_time:
+                pause_mora = None
+            else:
+                pause_mora = word['start'] - last_word_time
+            last_word_time = word['end']
+
             # Distribute time equally among the symbols of the word
             symbols_times = distribute_time_equally(word['start'], word['end'], word['text'])
 
@@ -52,7 +59,16 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
             word_detail = {
                 "moras": symbols_times,
                 "is_interrogative": "か" in word['text'] or "?" in word['text'],  # Check if the word is interrogative
-                "complete_word": word['text']
+                "complete_word": word['text'],
+                "pause_mora": None if pause_mora is None else 
+                {
+                        "text": " ",
+                        "consonant": None,
+                        "consonant_length": None,
+                        "vowel": "pau",
+                        "vowel_length": pause_mora,
+                        "pitch": 0.0
+                    }
             }
             
             # Add the detailed word to the list
