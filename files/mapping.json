@@ -74,13 +74,13 @@
     "プ": {"consonant": "p", "vowel": "u"},
     "ペ": {"consonant": "p", "vowel": "e"},
     "ポ": {"consonant": "p", "vowel": "o"},
-    "私": {"consonant": "w", "vowel": "atashi"},
+    "私": {"consonant": "wtsh", "vowel": "aai"},
     "文": {"consonant": "b", "vowel": "un"},
-    "別": {"consonant": "b", "vowel": "etsu"},
+    "別": {"consonant": "bts", "vowel": "eu"},
     "市": {"consonant": "sh", "vowel": "i"},
     "来": {"consonant": "r", "vowel": "ai"},
-    "観": {"consonant": "k", "vowel": "an"},
-    "光": {"consonant": "h", "vowel": "ikari"},
+    "観": {"consonant": "kn", "vowel": "a"},
+    "光": {"consonant": "hkr", "vowel": "iai"},
     "ス": {"consonant": "s", "vowel": "u"},
     "ッ": {"consonant": null, "vowel": null}
 }

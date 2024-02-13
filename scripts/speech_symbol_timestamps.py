@@ -5,7 +5,7 @@ import json
 import whisper_timestamped
 
 # Local application imports
-from auxiliar_functions_for_audio_query import distribute_time_equally, add_consonant_vowel_info, calculate_pitch
+from auxiliar_functions_for_audio_query import distribute_time_equally, add_consonant_vowel_info, calculate_pitch, time_for_vowels_and_consonants
 
 def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_symbol_timestamps.json", mapping_file="files/mapping.json"):
     """
@@ -30,7 +30,7 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
     # Initialize the main dictionary to store the transcription and word details
     audio_query_data = {
         "transcription": result["text"],
-        "words": []
+        "accent_phrases": []
     }
 
     # Process each word in the transcription
@@ -45,15 +45,18 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
             # Calculate and add pitch information to each symbol
             symbols_times = calculate_pitch(audio_path, symbols_times)
 
+            # Calculate the vowels and consonants lenghts for each symbol
+            symbols_times = time_for_vowels_and_consonants(symbols_times)
+           
             # Create a dictionary for each word with its details
             word_detail = {
-                "symbols": symbols_times,
+                "moras": symbols_times,
                 "is_interrogative": "か" in word['text'] or "?" in word['text'],  # Check if the word is interrogative
                 "complete_word": word['text']
             }
             
             # Add the detailed word to the list
-            audio_query_data["words"].append(word_detail)
+            audio_query_data["accent_phrases"].append(word_detail)
 
     # Add additional metadata related to the audio processing
     metadata = {

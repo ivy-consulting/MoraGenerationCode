@@ -1,23 +1,25 @@
 {
     "transcription": "私は文別市に来ました。おすすめの観光スポットはありますか?",
-    "words": [
+    "accent_phrases": [
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "私",
                     "start": 0.14,
                     "end": 0.44,
                     "vowel_consonant_length": 0.3,
-                    "consonant": "w",
-                    "vowel": "atashi",
-                    "pitch": 95.65
+                    "consonant": "wtsh",
+                    "vowel": "aai",
+                    "pitch": 0.0956507,
+                    "vowel_length": 0.225,
+                    "consonant_length": 0.075
                 }
             ],
             "is_interrogative": false,
             "complete_word": "私"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "は",
                     "start": 0.44,
@@ -25,14 +27,16 @@
                     "vowel_consonant_length": 0.24,
                     "consonant": "h",
                     "vowel": "a",
-                    "pitch": 2290.41
+                    "pitch": 2.2904065,
+                    "vowel_length": 0.192,
+                    "consonant_length": 0.048
                 }
             ],
             "is_interrogative": false,
             "complete_word": "は"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "文",
                     "start": 0.68,
@@ -40,29 +44,33 @@
                     "vowel_consonant_length": 0.2,
                     "consonant": "b",
                     "vowel": "un",
-                    "pitch": 85.09
+                    "pitch": 0.0850866,
+                    "vowel_length": 0.1778,
+                    "consonant_length": 0.0222
                 }
             ],
             "is_interrogative": false,
             "complete_word": "文"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "別",
                     "start": 0.88,
                     "end": 1.14,
                     "vowel_consonant_length": 0.26,
-                    "consonant": "b",
-                    "vowel": "etsu",
-                    "pitch": 200.51
+                    "consonant": "bts",
+                    "vowel": "eu",
+                    "pitch": 0.2005052,
+                    "vowel_length": 0.1891,
+                    "consonant_length": 0.0709
                 }
             ],
             "is_interrogative": false,
             "complete_word": "別"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "市",
                     "start": 1.14,
@@ -70,14 +78,16 @@
                     "vowel_consonant_length": 0.22,
                     "consonant": "sh",
                     "vowel": "i",
-                    "pitch": 3691.97
+                    "pitch": 3.6919651,
+                    "vowel_length": 0.1467,
+                    "consonant_length": 0.0733
                 }
             ],
             "is_interrogative": false,
             "complete_word": "市"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "に",
                     "start": 1.36,
@@ -85,14 +95,16 @@
                     "vowel_consonant_length": 0.1,
                     "consonant": "n",
                     "vowel": "i",
-                    "pitch": 202.78
+                    "pitch": 0.2027788,
+                    "vowel_length": 0.08,
+                    "consonant_length": 0.02
                 }
             ],
             "is_interrogative": false,
             "complete_word": "に"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "来",
                     "start": 1.46,
@@ -100,14 +112,16 @@
                     "vowel_consonant_length": 0.14,
                     "consonant": "r",
                     "vowel": "ai",
-                    "pitch": 2184.04
+                    "pitch": 2.184045,
+                    "vowel_length": 0.1244,
+                    "consonant_length": 0.0156
                 }
             ],
             "is_interrogative": false,
             "complete_word": "来"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "ま",
                     "start": 1.6,
@@ -115,7 +129,9 @@
                     "vowel_consonant_length": 0.1067,
                     "consonant": "m",
                     "vowel": "a",
-                    "pitch": 80.72
+                    "pitch": 0.0807191,
+                    "vowel_length": 0.0854,
+                    "consonant_length": 0.0213
                 },
                 {
                     "text": "し",
@@ -124,7 +140,9 @@
                     "vowel_consonant_length": 0.1067,
                     "consonant": "sh",
                     "vowel": "i",
-                    "pitch": 2862.93
+                    "pitch": 2.8629332,
+                    "vowel_length": 0.0711,
+                    "consonant_length": 0.0356
                 },
                 {
                     "text": "た。",
@@ -133,14 +151,16 @@
                     "vowel_consonant_length": 0.1067,
                     "consonant": "t",
                     "vowel": "a",
-                    "pitch": 2266.33
+                    "pitch": 2.2663259,
+                    "vowel_length": 0.0854,
+                    "consonant_length": 0.0213
                 }
             ],
             "is_interrogative": false,
             "complete_word": "ました。"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "お",
                     "start": 2.34,
@@ -148,14 +168,16 @@
                     "vowel_consonant_length": 0.22,
                     "consonant": null,
                     "vowel": "o",
-                    "pitch": 95.43
+                    "pitch": 0.0954296,
+                    "vowel_length": 0.22,
+                    "consonant_length": null
                 }
             ],
             "is_interrogative": false,
             "complete_word": "お"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "す",
                     "start": 2.56,
@@ -163,14 +185,16 @@
                     "vowel_consonant_length": 0.12,
                     "consonant": "s",
                     "vowel": "u",
-                    "pitch": 3058.21
+                    "pitch": 3.0582119,
+                    "vowel_length": 0.096,
+                    "consonant_length": 0.024
                 }
             ],
             "is_interrogative": false,
             "complete_word": "す"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "す",
                     "start": 2.68,
@@ -178,14 +202,16 @@
                     "vowel_consonant_length": 0.14,
                     "consonant": "s",
                     "vowel": "u",
-                    "pitch": 1171.75
+                    "pitch": 1.1717506,
+                    "vowel_length": 0.112,
+                    "consonant_length": 0.028
                 }
             ],
             "is_interrogative": false,
             "complete_word": "す"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "め",
                     "start": 2.82,
@@ -193,14 +219,16 @@
                     "vowel_consonant_length": 0.12,
                     "consonant": "m",
                     "vowel": "e",
-                    "pitch": 196.42
+                    "pitch": 0.1964218,
+                    "vowel_length": 0.096,
+                    "consonant_length": 0.024
                 }
             ],
             "is_interrogative": false,
             "complete_word": "め"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "の",
                     "start": 2.94,
@@ -208,44 +236,50 @@
                     "vowel_consonant_length": 0.16,
                     "consonant": "n",
                     "vowel": "o",
-                    "pitch": 203.21
+                    "pitch": 0.2032142,
+                    "vowel_length": 0.128,
+                    "consonant_length": 0.032
                 }
             ],
             "is_interrogative": false,
             "complete_word": "の"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "観",
                     "start": 3.1,
                     "end": 3.28,
                     "vowel_consonant_length": 0.18,
-                    "consonant": "k",
-                    "vowel": "an",
-                    "pitch": 522.52
+                    "consonant": "kn",
+                    "vowel": "a",
+                    "pitch": 0.5225158,
+                    "vowel_length": 0.12,
+                    "consonant_length": 0.06
                 }
             ],
             "is_interrogative": false,
             "complete_word": "観"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "光",
                     "start": 3.28,
                     "end": 3.48,
                     "vowel_consonant_length": 0.2,
-                    "consonant": "h",
-                    "vowel": "ikari",
-                    "pitch": 247.61
+                    "consonant": "hkr",
+                    "vowel": "iai",
+                    "pitch": 0.2476072,
+                    "vowel_length": 0.16,
+                    "consonant_length": 0.04
                 }
             ],
             "is_interrogative": false,
             "complete_word": "光"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "ス",
                     "start": 3.48,
@@ -253,14 +287,16 @@
                     "vowel_consonant_length": 0.18,
                     "consonant": "s",
                     "vowel": "u",
-                    "pitch": 1665.38
+                    "pitch": 1.6653798,
+                    "vowel_length": 0.144,
+                    "consonant_length": 0.036
                 }
             ],
             "is_interrogative": false,
             "complete_word": "ス"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "ポ",
                     "start": 3.66,
@@ -268,14 +304,16 @@
                     "vowel_consonant_length": 0.14,
                     "consonant": "p",
                     "vowel": "o",
-                    "pitch": 2694.99
+                    "pitch": 2.6949859,
+                    "vowel_length": 0.112,
+                    "consonant_length": 0.028
                 }
             ],
             "is_interrogative": false,
             "complete_word": "ポ"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "ット",
                     "start": 3.8,
@@ -283,14 +321,16 @@
                     "vowel_consonant_length": 0.16,
                     "consonant": "t",
                     "vowel": "o",
-                    "pitch": 257.94
+                    "pitch": 0.2579391,
+                    "vowel_length": 0.128,
+                    "consonant_length": 0.032
                 }
             ],
             "is_interrogative": false,
             "complete_word": "ット"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "は",
                     "start": 3.96,
@@ -298,14 +338,16 @@
                     "vowel_consonant_length": 0.18,
                     "consonant": "h",
                     "vowel": "a",
-                    "pitch": 194.68
+                    "pitch": 0.1946763,
+                    "vowel_length": 0.144,
+                    "consonant_length": 0.036
                 }
             ],
             "is_interrogative": false,
             "complete_word": "は"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "あ",
                     "start": 4.14,
@@ -313,7 +355,9 @@
                     "vowel_consonant_length": 0.065,
                     "consonant": null,
                     "vowel": "a",
-                    "pitch": 105.55
+                    "pitch": 0.1055511,
+                    "vowel_length": 0.065,
+                    "consonant_length": null
                 },
                 {
                     "text": "り",
@@ -322,7 +366,9 @@
                     "vowel_consonant_length": 0.065,
                     "consonant": "r",
                     "vowel": "i",
-                    "pitch": 217.61
+                    "pitch": 0.2176085,
+                    "vowel_length": 0.052,
+                    "consonant_length": 0.013
                 },
                 {
                     "text": "ま",
@@ -331,7 +377,9 @@
                     "vowel_consonant_length": 0.065,
                     "consonant": "m",
                     "vowel": "a",
-                    "pitch": 93.02
+                    "pitch": 0.0930151,
+                    "vowel_length": 0.052,
+                    "consonant_length": 0.013
                 },
                 {
                     "text": "す",
@@ -340,14 +388,16 @@
                     "vowel_consonant_length": 0.065,
                     "consonant": "s",
                     "vowel": "u",
-                    "pitch": 129.28
+                    "pitch": 0.1292819,
+                    "vowel_length": 0.052,
+                    "consonant_length": 0.013
                 }
             ],
             "is_interrogative": false,
             "complete_word": "あります"
         },
         {
-            "symbols": [
+            "moras": [
                 {
                     "text": "か?",
                     "start": 4.4,
@@ -355,7 +405,9 @@
                     "vowel_consonant_length": 0.3,
                     "consonant": "k",
                     "vowel": "a",
-                    "pitch": 155.96
+                    "pitch": 0.1559585,
+                    "vowel_length": 0.24,
+                    "consonant_length": 0.06
                 }
             ],
             "is_interrogative": true,
