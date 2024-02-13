@@ -15,6 +15,7 @@
                     "consonant_length": 0.075
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "私",
             "pause_mora": {
@@ -40,6 +41,7 @@
                     "consonant_length": 0.048
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "は",
             "pause_mora": null
@@ -58,6 +60,7 @@
                     "consonant_length": 0.0222
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "文",
             "pause_mora": null
@@ -76,6 +79,7 @@
                     "consonant_length": 0.0709
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "別",
             "pause_mora": null
@@ -94,6 +98,7 @@
                     "consonant_length": 0.0733
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "市",
             "pause_mora": null
@@ -112,6 +117,7 @@
                     "consonant_length": 0.02
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "に",
             "pause_mora": null
@@ -130,6 +136,7 @@
                     "consonant_length": 0.0156
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "来",
             "pause_mora": null
@@ -170,6 +177,7 @@
                     "consonant_length": 0.0213
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "ました。",
             "pause_mora": null
@@ -188,6 +196,7 @@
                     "consonant_length": null
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "お",
             "pause_mora": {
@@ -213,6 +222,7 @@
                     "consonant_length": 0.024
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "す",
             "pause_mora": null
@@ -231,6 +241,7 @@
                     "consonant_length": 0.028
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "す",
             "pause_mora": null
@@ -249,6 +260,7 @@
                     "consonant_length": 0.024
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "め",
             "pause_mora": null
@@ -267,6 +279,7 @@
                     "consonant_length": 0.032
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "の",
             "pause_mora": null
@@ -285,6 +298,7 @@
                     "consonant_length": 0.06
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "観",
             "pause_mora": null
@@ -303,6 +317,7 @@
                     "consonant_length": 0.04
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "光",
             "pause_mora": null
@@ -321,6 +336,7 @@
                     "consonant_length": 0.036
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "ス",
             "pause_mora": null
@@ -339,6 +355,7 @@
                     "consonant_length": 0.028
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "ポ",
             "pause_mora": null
@@ -357,6 +374,7 @@
                     "consonant_length": 0.032
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "ット",
             "pause_mora": null
@@ -375,6 +393,7 @@
                     "consonant_length": 0.036
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "は",
             "pause_mora": null
@@ -426,6 +445,7 @@
                     "consonant_length": 0.013
                 }
             ],
+            "accent": 0,
             "is_interrogative": false,
             "complete_word": "あります",
             "pause_mora": null
@@ -444,18 +464,19 @@
                     "consonant_length": 0.06
                 }
             ],
+            "accent": 0,
             "is_interrogative": true,
             "complete_word": "か?",
             "pause_mora": null
         }
     ],
-    "speedScale": null,
-    "pitchScale": null,
-    "intonationScale": null,
-    "volumeScale": null,
-    "prePhonemeLength": null,
-    "postPhonemeLength": null,
+    "speedScale": 1.0,
+    "pitchScale": 0.0,
+    "intonationScale": 1.0,
+    "volumeScale": 1.0,
+    "prePhonemeLength": 0.1,
+    "postPhonemeLength": 0.1,
     "outputSamplingRate": 24000,
-    "outputStereo": null,
+    "outputStereo": false,
     "kana": "私は文別市に来ました。おすすめの観光スポットはありますか?"
 }

@@ -58,6 +58,7 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
             # Create a dictionary for each word with its details
             word_detail = {
                 "moras": symbols_times,
+                "accent": 0,  # Default accent value
                 "is_interrogative": "か" in word['text'] or "?" in word['text'],  # Check if the word is interrogative
                 "complete_word": word['text'],
                 "pause_mora": None if pause_mora is None else 
@@ -76,14 +77,14 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
 
     # Add additional metadata related to the audio processing
     metadata = {
-        "speedScale": None,
-        "pitchScale": None,
-        "intonationScale": None,
-        "volumeScale": None,
-        "prePhonemeLength": None,
-        "postPhonemeLength": None,
+        "speedScale": 1.0,
+        "pitchScale": 0.0,
+        "intonationScale": 1.0,
+        "volumeScale": 1.0,
+        "prePhonemeLength": 0.1,
+        "postPhonemeLength": 0.1,
         "outputSamplingRate": 24000,  # Set the output sampling rate explicitly
-        "outputStereo": None,
+        "outputStereo": False,
         "kana": result["text"]  # The transcribed text in Kana
     }
 
