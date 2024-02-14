@@ -12,7 +12,7 @@ Before using the scripts in this repository, ensure you have Docker installed on
 
 To use VOICEVOX Engine, you need to pull its Docker image and run it on your machine. Follow these steps:
 
-#### Pull VOICEVOX Engine Docker Image
+#### Pull VOICEVOX Engine Docker Image on Linux
 
 Download the Docker image for VOICEVOX Engine:
 
