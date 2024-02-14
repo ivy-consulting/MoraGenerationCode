@@ -1,46 +1,41 @@
 # AudioPhoneticsLab
 
-## Overview
-AudioPhoneticsLab is a specialized repository focusing on the transcription of audio files into text and enriching each transcribed word with detailed phonetic information. It takes an audio input, transcribes it using the `whisper-timestamped` model, distributes the duration of each transcribed word among its constituent symbols, calculates the pitch for each symbol, and identifies if the word forms a question. This results in a detailed mapping of when each symbol in the spoken language begins and ends in the audio, offering a clear and detailed view of speech progression.
+## Description
 
-## Features
-- **Audio Transcription with Detailed Phonetic Information**: Utilizes the `whisper-timestamped` model to transcribe spoken words in an audio file and enriches the transcription with consonants and vowels information.
-- **Symbol-Level Timestamps and Pitch Analysis**: Assigns a start and end timestamp to each symbol, along with the pitch, providing an in-depth analysis of the speech.
-- **Interrogative Detection**: Identifies whether the transcribed words form a question, enhancing the understanding of speech's intent.
-- **Customizable Output**: Offers options to save the transcription and analysis results into a JSON file, allowing for easy integration with other applications.
-
-## Requirements
-- Python 3.x
-- Libraries in requirements.txt
+AudioPhoneticsLab is a project focused on generating audio queries using VOICEVOX Engine. It provides scripts to transcribe audio to text and then generate an audio query for text-to-speech synthesis, aiming to facilitate phonetic studies and applications.
 
 ## Installation
-To set up the AudioPhoneticsLab environment, follow these steps:
+
+Before using the scripts in this repository, ensure you have Docker installed on your system as VOICEVOX Engine runs within a Docker container.
+
+### Installing VOICEVOX Engine
+
+To use VOICEVOX Engine, you need to pull its Docker image and run it on your machine. Follow these steps:
+
+#### Pull VOICEVOX Engine Docker Image
+
+Download the Docker image for VOICEVOX Engine:
 
 ```bash
-git clone https://github.com/your-username/AudioPhoneticsLab.git
-cd AudioPhoneticsLab
-pip install -r requirements.txt
+docker pull voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+```
+#### Run VOICEVOX Engine
+Start the Docker container with VOICEVOX Engine:
+```bash
+docker run --rm -p '127.0.0.1:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 ```
 
-## Usage
-To process an audio file, use the speech_symbol_timestamps.py script located in the scripts directory. This script will:
+This command runs VOICEVOX Engine and maps port 50021 of the container to port 50021 of your local machine, allowing you to access the service from your browser or through HTTP requests.
 
-- Load the specified audio file.
-- Transcribe the audio using the whisper-timestamped model.
-- Distribute the duration of each word among its symbols.
-- Add consonant and vowel information and calculate the pitch for each symbol.
-- Save the results in a JSON file.
-- Execute the script with the following command:
+#### Verify VOICEVOX Engine is Running
+Once VOICEVOX Engine is running inside Docker, you can verify its operation by accessing the API documentation:
 
-`python scripts/speech_symbol_timestamps.py`
+Open your browser and go to http://127.0.0.1:50021/docs. If you see the Swagger UI, VOICEVOX Engine is running correctly.
 
-## Output
-The script outputs a JSON file named speech_symbol_timestamps.json, containing the transcription and detailed analysis of the audio file. This includes start and end timestamps for each symbol, pitch values, and whether each word is interrogative, structured to provide a comprehensive overview of speech progression.
+### Usage
+To generate an audio query using the provided script, follow these steps:
 
-## Contributions
-Contributions to AudioPhoneticsLab are welcome. If you have an idea or improvement, feel free to fork the repository and submit a pull request.
+Run the scripts.audio_query_with_voicevox.py script with the path to your audio file
 
-
-## Acknowledgments
-OpenAI's Whisper project for providing the base model for audio transcription.
-The community of developers and researchers in the field of speech recognition and processing.
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
