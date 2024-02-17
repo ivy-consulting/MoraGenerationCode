@@ -1,23 +1,45 @@
 {
-    "transcription": "私は文別市に来ました。おすすめの観光スポットはありますか?",
+    "transcription": "わたしはぶんべつしにきました。おすすめのかんこうスポットはありますか?",
     "accent_phrases": [
         {
             "moras": [
                 {
-                    "text": "私",
+                    "text": "わ",
                     "start": 0.14,
+                    "end": 0.24,
+                    "vowel_consonant_length": 0.1,
+                    "consonant": "w",
+                    "vowel": "a",
+                    "pitch": 0.0723861,
+                    "vowel_length": 0.08,
+                    "consonant_length": 0.02
+                },
+                {
+                    "text": "た",
+                    "start": 0.24,
+                    "end": 0.34,
+                    "vowel_consonant_length": 0.1,
+                    "consonant": "t",
+                    "vowel": "a",
+                    "pitch": 0.0865265,
+                    "vowel_length": 0.08,
+                    "consonant_length": 0.02
+                },
+                {
+                    "text": "し",
+                    "start": 0.34,
                     "end": 0.44,
-                    "vowel_consonant_length": 0.3,
-                    "consonant": "wtsh",
-                    "vowel": "aai",
-                    "pitch": 0.0956507,
-                    "vowel_length": 0.225,
-                    "consonant_length": 0.075
+                    "vowel_consonant_length": 0.1,
+                    "consonant": "sh",
+                    "vowel": "i",
+                    "pitch": 0.1487941,
+                    "vowel_length": 0.0667,
+                    "consonant_length": 0.0333
                 }
             ],
             "accent": 0,
             "is_interrogative": false,
-            "complete_word": "私",
+            "complete_word": "わたし",
             "pause_mora": {
                 "text": " ",
                 "consonant": null,
@@ -49,45 +71,67 @@
         {
             "moras": [
                 {
-                    "text": "文",
+                    "text": "ぶ",
                     "start": 0.68,
+                    "end": 0.78,
+                    "vowel_consonant_length": 0.1,
+                    "consonant": null,
+                    "vowel": null,
+                    "pitch": 0.1116438,
+                    "vowel_length": null,
+                    "consonant_length": null
+                },
+                {
+                    "text": "ん",
+                    "start": 0.78,
                     "end": 0.88,
-                    "vowel_consonant_length": 0.2,
-                    "consonant": "b",
-                    "vowel": "un",
-                    "pitch": 0.0850866,
-                    "vowel_length": 0.1778,
-                    "consonant_length": 0.0222
+                    "vowel_consonant_length": 0.1,
+                    "consonant": "n",
+                    "vowel": null,
+                    "pitch": 0.0946422,
+                    "vowel_length": null,
+                    "consonant_length": 0.1
                 }
             ],
             "accent": 0,
             "is_interrogative": false,
-            "complete_word": "文",
+            "complete_word": "ぶん",
             "pause_mora": null
         },
         {
             "moras": [
                 {
-                    "text": "別",
+                    "text": "べ",
                     "start": 0.88,
+                    "end": 1.01,
+                    "vowel_consonant_length": 0.13,
+                    "consonant": null,
+                    "vowel": null,
+                    "pitch": 0.1843442,
+                    "vowel_length": null,
+                    "consonant_length": null
+                },
+                {
+                    "text": "つ",
+                    "start": 1.01,
                     "end": 1.14,
-                    "vowel_consonant_length": 0.26,
-                    "consonant": "bts",
-                    "vowel": "eu",
-                    "pitch": 0.2005052,
-                    "vowel_length": 0.1891,
-                    "consonant_length": 0.0709
+                    "vowel_consonant_length": 0.13,
+                    "consonant": "ts",
+                    "vowel": "u",
+                    "pitch": 0.2154619,
+                    "vowel_length": 0.0867,
+                    "consonant_length": 0.0433
                 }
             ],
             "accent": 0,
             "is_interrogative": false,
-            "complete_word": "別",
+            "complete_word": "べつ",
             "pause_mora": null
         },
         {
             "moras": [
                 {
-                    "text": "市",
+                    "text": "し",
                     "start": 1.14,
                     "end": 1.36,
                     "vowel_consonant_length": 0.22,
@@ -100,7 +144,7 @@
             ],
             "accent": 0,
             "is_interrogative": false,
-            "complete_word": "市",
+            "complete_word": "し",
             "pause_mora": null
         },
         {
@@ -125,20 +169,31 @@
         {
             "moras": [
                 {
-                    "text": "来",
+                    "text": "ら",
                     "start": 1.46,
-                    "end": 1.6,
-                    "vowel_consonant_length": 0.14,
+                    "end": 1.53,
+                    "vowel_consonant_length": 0.07,
                     "consonant": "r",
-                    "vowel": "ai",
-                    "pitch": 2.184045,
-                    "vowel_length": 0.1244,
-                    "consonant_length": 0.0156
+                    "vowel": "a",
+                    "pitch": 0.1403683,
+                    "vowel_length": 0.056,
+                    "consonant_length": 0.014
+                },
+                {
+                    "text": "い",
+                    "start": 1.53,
+                    "end": 1.6,
+                    "vowel_consonant_length": 0.07,
+                    "consonant": null,
+                    "vowel": "i",
+                    "pitch": 3.4534666,
+                    "vowel_length": 0.07,
+                    "consonant_length": null
                 }
             ],
             "accent": 0,
             "is_interrogative": false,
-            "complete_word": "来",
+            "complete_word": "らい",
             "pause_mora": null
         },
         {
@@ -287,39 +342,72 @@
         {
             "moras": [
                 {
-                    "text": "観",
+                    "text": "か",
                     "start": 3.1,
-                    "end": 3.28,
-                    "vowel_consonant_length": 0.18,
-                    "consonant": "kn",
+                    "end": 3.19,
+                    "vowel_consonant_length": 0.09,
+                    "consonant": "k",
                     "vowel": "a",
-                    "pitch": 0.5225158,
-                    "vowel_length": 0.12,
-                    "consonant_length": 0.06
+                    "pitch": 0.7830664,
+                    "vowel_length": 0.072,
+                    "consonant_length": 0.018
+                },
+                {
+                    "text": "ん",
+                    "start": 3.19,
+                    "end": 3.28,
+                    "vowel_consonant_length": 0.09,
+                    "consonant": "n",
+                    "vowel": null,
+                    "pitch": 0.3604136,
+                    "vowel_length": null,
+                    "consonant_length": 0.09
                 }
             ],
             "accent": 0,
-            "is_interrogative": false,
-            "complete_word": "観",
+            "is_interrogative": true,
+            "complete_word": "かん",
             "pause_mora": null
         },
         {
             "moras": [
                 {
-                    "text": "光",
+                    "text": "ひ",
                     "start": 3.28,
+                    "end": 3.3467,
+                    "vowel_consonant_length": 0.0667,
+                    "consonant": "h",
+                    "vowel": "i",
+                    "pitch": 0.2066387,
+                    "vowel_length": 0.0534,
+                    "consonant_length": 0.0133
+                },
+                {
+                    "text": "か",
+                    "start": 3.3467,
+                    "end": 3.4133,
+                    "vowel_consonant_length": 0.0667,
+                    "consonant": "k",
+                    "vowel": "a",
+                    "pitch": 0.2015003,
+                    "vowel_length": 0.0534,
+                    "consonant_length": 0.0133
+                },
+                {
+                    "text": "り",
+                    "start": 3.4133,
                     "end": 3.48,
-                    "vowel_consonant_length": 0.2,
-                    "consonant": "hkr",
-                    "vowel": "iai",
-                    "pitch": 0.2476072,
-                    "vowel_length": 0.16,
-                    "consonant_length": 0.04
+                    "vowel_consonant_length": 0.0667,
+                    "consonant": "r",
+                    "vowel": "i",
+                    "pitch": 0.2241542,
+                    "vowel_length": 0.0534,
+                    "consonant_length": 0.0133
                 }
             ],
             "accent": 0,
-            "is_interrogative": false,
-            "complete_word": "光",
+            "is_interrogative": true,
+            "complete_word": "ひかり",
             "pause_mora": null
         },
         {
@@ -478,5 +566,5 @@
     "postPhonemeLength": 0.1,
     "outputSamplingRate": 24000,
     "outputStereo": false,
-    "kana": "私は文別市に来ました。おすすめの観光スポットはありますか?"
+    "kana": "わたしはぶんべつしにきました。おすすめのかんこうスポットはありますか?"
 }

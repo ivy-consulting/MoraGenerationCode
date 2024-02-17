@@ -5,7 +5,8 @@ import json
 import whisper_timestamped
 
 # Local application imports
-from auxiliar_functions_for_audio_query import distribute_time_equally, add_consonant_vowel_info, calculate_pitch, time_for_vowels_and_consonants
+from auxiliar_functions_for_audio_query import (distribute_time_equally, add_consonant_vowel_info,
+                                                 calculate_pitch, time_for_vowels_and_consonants, text_to_hiragana)
 
 def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_symbol_timestamps.json", mapping_file="files/mapping.json"):
     """
@@ -25,17 +26,19 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
     # Load the model and transcribe the audio
     model = whisper_timestamped.load_model("base", device="cpu")
     result = whisper_timestamped.transcribe(model, audio_path, language="ja")
-    print("Complete transcription:", result["text"])
+    print("Complete transcription:", text_to_hiragana(result["text"]))
     print(result)
     # Initialize the main dictionary to store the transcription and word details
     audio_query_data = {
-        "transcription": result["text"],
+        "transcription": text_to_hiragana(result["text"]),
         "accent_phrases": []
     }
     last_word_time = 0
     # Process each word in the transcription
     for segment in result["segments"]:
         for word in segment.get("words", []):
+            # Convert the word to Kana
+            word['text'] = text_to_hiragana(word['text'])
             # Verify the last word time
             if word['start'] == last_word_time:
                 pause_mora = None
@@ -85,7 +88,7 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
         "postPhonemeLength": 0.1,
         "outputSamplingRate": 24000,  # Set the output sampling rate explicitly
         "outputStereo": False,
-        "kana": result["text"]  # The transcribed text in Kana
+        "kana": text_to_hiragana(result["text"])  # The transcribed text in Kana
     }
 
     # Update the main dictionary with the metadata

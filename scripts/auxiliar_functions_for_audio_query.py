@@ -4,7 +4,7 @@ import os
 import aubio
 import numpy as np
 from pydub import AudioSegment
-
+import pykakasi 
 
 
 def calculate_pitch(audio_path, symbols, sample_rate=24000):
@@ -219,6 +219,41 @@ def time_for_vowels_and_consonants(symbols):
         symbol['consonant_length'] = round(time_consonants, 4) if len_consonants > 0 else None
 
     return symbols
+
+# Translate the kanji  into hiragana
+
+
+def text_to_hiragana(text): 
+    """ 
+    Convert Japanese text to Hiragana. 
+
+    Parameters: 
+    - text (str): The Japanese text to convert. 
+
+    Returns: 
+    - str: The converted text in Hiragana. 
+    """ 
+    # Create a Pykakasi object 
+    kakasi = pykakasi.kakasi() 
+
+    # Set the conversion mode to convert to Hiragana 
+    kakasi.setMode('J', 'H') # Convert Japanese (Kanji) to Hiragana 
+
+    # Create a converter 
+    converter = kakasi.getConverter() 
+
+    # Convert the input text to Hiragana 
+    hiragana_text = converter.do(text) 
+
+    return hiragana_text 
+
+# Example usage 
+if __name__ == "__main__": 
+    original_text = "私は日本語を勉強しています。" 
+    hiragana_text = text_to_hiragana(original_text) 
+    print("Original text:", original_text) 
+    print("Converted to Hiragana:", hiragana_text) 
+
 
 
 if __name__ == "__main__":
