@@ -6,7 +6,8 @@ import whisper_timestamped
 
 # Local application imports
 from auxiliar_functions_for_audio_query import (distribute_time_equally, add_consonant_vowel_info,
-                                                 calculate_pitch, time_for_vowels_and_consonants, text_to_hiragana)
+                                                 calculate_pitch, time_for_vowels_and_consonants, text_to_hiragana,
+                                                 distribute_time_error_in_all_vowels_and_pauses, get_audio_duration)
 
 def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_symbol_timestamps.json", mapping_file="files/mapping.json"):
     """
@@ -27,7 +28,7 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
     model = whisper_timestamped.load_model("base", device="cpu")
     result = whisper_timestamped.transcribe(model, audio_path, language="ja")
     print("Complete transcription:", text_to_hiragana(result["text"]))
-    print(result)
+    
     # Initialize the main dictionary to store the transcription and word details
     audio_query_data = {
         "transcription": text_to_hiragana(result["text"]),
@@ -75,11 +76,17 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
                     }
             }
             
+            # Final pause of the word
+            final_time = word['end']
+            
             # Add the detailed word to the list
             audio_query_data["accent_phrases"].append(word_detail)
+                     
 
     # Add additional metadata related to the audio processing
     metadata = {
+        "final_pause": get_audio_duration(audio_path) - final_time if 
+                        (get_audio_duration(audio_path) - final_time) > 0 else None,
         "speedScale": 1.0,
         "pitchScale": 0.0,
         "intonationScale": 1.0,
@@ -104,5 +111,5 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
 
 # Example usage
 if __name__ == "__main__":
-    audio_path = "test_audios/japanesef32.wav"
+    audio_path = "test_audios/001-sibutomo (1).mp3"
     transcription_json = audio_query_json(audio_path, save_to_file=True)

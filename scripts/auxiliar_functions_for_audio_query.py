@@ -215,13 +215,12 @@ def time_for_vowels_and_consonants(symbols):
         time_consonants = fraction_time * len_consonants
         
         # Update the symbol dictionary with calculated times, rounding to 4 decimal places.
-        symbol['vowel_length'] = round(time_vowels, 4) if len_vowels > 0 else None
+        symbol['vowel_length'] = total_time if len_vowels > 0 else None
         symbol['consonant_length'] = round(time_consonants, 4) if len_consonants > 0 else None
 
     return symbols
 
 # Translate the kanji  into hiragana
-
 
 def text_to_hiragana(text): 
     """ 
@@ -246,6 +245,116 @@ def text_to_hiragana(text):
     hiragana_text = converter.do(text) 
 
     return hiragana_text 
+
+def calculate_total_vowel_and_pause_time(audio_query): 
+    """ 
+    Calcula el tiempo total de las vocales y las pausas (pause mora) en el JSON proporcionado. 
+
+    Parameters: 
+    - audio_query (dict): Un diccionario que representa el JSON con la transcripción y detalles fonéticos. 
+
+    Returns: 
+    - float: El tiempo total en segundos de las vocales y las pausas no nulas. 
+    """ 
+    total_time = 0.0 
+
+    for phrase in audio_query['accent_phrases']: 
+        for mora in phrase['moras']: 
+        # Sum the duration of the vowels        
+            total_time += mora['vowel_consonant_length']
+        if phrase['pause_mora'] is not None:
+            # Sum the duration of the pause
+            total_time += phrase['pause_mora']['vowel_length']
+            if phrase['pause_mora']['consonant_length'] is not None:
+                total_time += phrase['pause_mora']['consonant_length']  
+    # Sum the duration of the final pause
+    total_time += audio_query['final_pause'] if audio_query['final_pause'] is not None else 0
+    return total_time 
+
+def number_of_vowels_and_pauses(audio_query): 
+    """
+    Returns the number of vowels and pauses in the audio query.
+
+    Parameters:
+    - audio_query (dict): A dictionary representing the JSON with the transcription and phonetic details.
+
+    Returns:
+    - int: The number of vowels and pauses in the audio query.
+
+    """
+    number = 0 
+
+    for phrase in audio_query['accent_phrases']: 
+        for mora in phrase['moras']: 
+            # Sum the number of vowels        
+            number += len(mora)
+        if phrase['pause_mora'] is not None:
+            # Sum the number of pauses
+            number += 1 
+        if phrase['pause_mora'] is not None:
+            # Sum the number of pauses for consonants if they are not None
+            number += 1
+            if phrase['pause_mora']['consonant_length'] is not None:
+                number += 1  
+    # Sum the number of the final pause
+    if audio_query['final_pause'] is not None:
+            number += 1
+    return number 
+
+def get_audio_duration(file_path): 
+    """ 
+    Returns the duration of an audio file in seconds. 
+
+    Parameters: 
+    - file_path (str): Path to the audio file. 
+
+    Returns: 
+    - float: Duration of the audio file in seconds. 
+    """ 
+    # Load the audio file using PyDub.
+    audio = AudioSegment.from_file(file_path) 
+    duration_seconds = len(audio) / 1000.0 # AudioSegment.length is in milliseconds 
+    return duration_seconds 
+
+def distribute_time_error_in_all_vowels_and_pauses(audio_query, audio_path):
+    """
+    Distribute the error in the total time of the audio query in all the vowels and pauses.
+
+    Parameters:
+    - audio_query (dict): A dictionary representing the JSON with the transcription and phonetic details.
+    - audio_path (str): The path to the audio file.
+
+    Returns:
+    - dict: The input audio query
+    """
+    # Total time of vowels and pauses
+    total_duration = calculate_total_vowel_and_pause_time(audio_query)
+
+    # Total time of the audio
+    audio_duration = get_audio_duration(audio_path)
+
+    # Calculate the error
+    error = audio_duration - total_duration
+
+    # Number of vowels and pauses
+    vowels_and_pauses = number_of_vowels_and_pauses(audio_query)
+
+    # Distribute the error in all the vowels and pauses
+    error_per_vowel_or_pause = error / vowels_and_pauses
+
+    print("Error per vowel or pause:", error_per_vowel_or_pause)
+
+    # Distribute the error in all the vowels and pauses
+    for phrase in audio_query['accent_phrases']:
+        for mora in phrase['moras']:
+            mora['vowel_consonant_length'] = mora['vowel_consonant_length'] + error_per_vowel_or_pause if mora['vowel_consonant_length'] is not None else None
+            mora['vowel_length'] = mora['vowel_length'] + error_per_vowel_or_pause if mora['vowel_length'] is not None else None
+
+        if phrase['pause_mora'] is not None:
+            phrase['pause_mora']['vowel_length'] = phrase['pause_mora']['vowel_length'] + error_per_vowel_or_pause
+            if phrase['pause_mora']['consonant_length'] is not None:
+                phrase['pause_mora']['consonant_length'] = phrase['pause_mora']['consonant_length'] + error_per_vowel_or_pause
+    return audio_query
 
 # Example usage 
 if __name__ == "__main__": 
