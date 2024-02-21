@@ -222,29 +222,33 @@ def time_for_vowels_and_consonants(symbols):
 
 # Translate the kanji  into hiragana
 
-def text_to_hiragana(text): 
-    """ 
-    Convert Japanese text to Hiragana. 
+def text_to_kanji(text):
+    """
+    Detects the language of the input text and converts it to Kanji if it is Japanese.
 
-    Parameters: 
-    - text (str): The Japanese text to convert. 
+    Parameters:
+    - text (str): The text to analyze and possibly convert.
 
-    Returns: 
-    - str: The converted text in Hiragana. 
-    """ 
-    # Create a Pykakasi object 
-    kakasi = pykakasi.kakasi() 
+    Returns:
+    - str: The original text if it's not Japanese, or the converted text in Kanji if it is Japanese.
+    """
+    
+    kakasi = pykakasi.kakasi()
 
-    # Set the conversion mode to convert to Hiragana 
-    kakasi.setMode('J', 'H') # Convert Japanese (Kanji) to Hiragana 
+    # Set the conversion mode to convert to Kanji
+    kakasi.setMode('H', 'K')  # Convert Hiragana to Kanji
+    kakasi.setMode('K', 'K')  # Keep Katakana as Katakana
+    kakasi.setMode('J', 'K')  # Convert Japanese (Kanji and Hiragana) to Kanji
 
-    # Create a converter 
-    converter = kakasi.getConverter() 
+    # Create a converter
+    converter = kakasi.getConverter()
 
-    # Convert the input text to Hiragana 
-    hiragana_text = converter.do(text) 
+    # Convert the input text to Kanji
+    kanji_text = converter.do(text)
+    
+    return kanji_text
+    
 
-    return hiragana_text 
 
 def calculate_total_vowel_and_pause_time(audio_query): 
     """ 
