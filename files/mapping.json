@@ -138,5 +138,7 @@
     "ヺ": {"consonant": "w", "vowel": "o"},
     "ヿ": {"consonant": "k", "vowel": "o"},
     "ヽ": {"consonant": null, "vowel": null},
-    "ヾ": {"consonant": null, "vowel": null}
+    "ヾ": {"consonant": null, "vowel": null},
+    "シ": {"consonant": null, "vowel": "i"},
+    "タ": {"consonant": null, "vowel": "a"}
 }
