@@ -5,7 +5,7 @@ import json
 import whisper_timestamped
 
 # Local application imports
-from auxiliar_functions_for_audio_query import (distribute_time_equally, add_consonant_vowel_info,
+from .auxiliar_functions_for_audio_query import (distribute_time_equally, add_consonant_vowel_info,
                                                  calculate_pitch, time_for_vowels_and_consonants, text_to_kanji,
                                                  distribute_time_error_in_all_vowels_and_pauses, get_audio_duration)
 
@@ -25,6 +25,12 @@ def audio_query_json(audio_path, save_to_file=False, json_output_path="speech_sy
             pitch, and whether each word forms a question, along with some metadata about the audio processing.
     """
     # Load the model and transcribe the audio
+    import os
+
+    audio_path = audio_path
+    if not os.path.exists(audio_path):
+        raise FileNotFoundError(f"The audio file was not found at path: {audio_path}")
+
     model = whisper_timestamped.load_model("base", device="cpu")
     result = whisper_timestamped.transcribe(model, audio_path, language="ja")
     print("Complete transcription:", text_to_kanji(result["text"]))

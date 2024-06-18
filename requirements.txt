@@ -4,3 +4,9 @@ pydub==0.25.1
 aubio==0.4.9
 numpy==1.23.5
 requests==2.31.0
+fastapi==0.30.1
+uvicorn==0.30.1
+pykakasi==2.2.1
+requests-toolbelt==1.0.0
+soundfile==0.12.1
+ffmpeg==1.4
