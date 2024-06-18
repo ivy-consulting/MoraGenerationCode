@@ -10,3 +10,4 @@ pykakasi==2.2.1
 requests-toolbelt==1.0.0
 soundfile==0.12.1
 ffmpeg==1.4
+python-multipart==0.0.9
